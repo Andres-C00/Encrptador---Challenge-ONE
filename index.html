@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Encriptador de Textos - Challenge</h1>
+    <div class="container">
+        <div class="input-section">
+            <textarea id="inputText" rows="10" cols="30" placeholder="Ingrese el texto aquí..." oninput="validarEntrada()"></textarea>
+            <div class="buttons">
+                <button class="boton-encriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+            <p id="mensajeValidacion" class="oculto">No se aceptan mayúsculas ni caracteres especiales.</p>
+        </div>
+        <div class="output-section">
+            <textarea id="outputText" rows="10" cols="30" placeholder="Resultado..." readonly></textarea>
+            <img src="muñeco.png" alt="Imagen de presentación" class="imagen-presentacion">
+        </div>
+    </div>
+    <footer>
+        <p>Creado por Andres Cordoba - Alura Latam ONE</p>
+    </footer>
+    <script src="codigo.js"></script>
+</body>
+</html>
+
+
+
+
+
+
